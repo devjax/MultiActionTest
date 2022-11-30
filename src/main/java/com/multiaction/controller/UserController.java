@@ -45,7 +45,7 @@ import org.springframework.web.servlet.View;
 
 
 @Controller
-@RequestMapping
+@RequestMapping("/")
 public class UserController {
 
 //	@RequestMapping("/user")
