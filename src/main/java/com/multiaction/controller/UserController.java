@@ -57,8 +57,10 @@ public class UserController {
 	@RequestMapping("/myView")
 	public ModelAndView myView(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-		View mv = (View) WebApplicationContextUtils.getWebApplicationContext(getServletContext()).getBean("myView");
-		return new ModelAndView(mv, null);
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("myView");
+		
+		return mv;
 	}
 //
 //	@RequestMapping("/remove")
